@@ -1,0 +1,112 @@
+/*
+  Pragmatic JavaScript
+  Chapter 1
+  Programming Assignment
+
+  Author: Chris Weaver
+  Date: 2025Apr08
+  Filename: styles.css
+*/
+
+/* Your CSS goes here */
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 26px;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  background-color: #001f3f; /* Navy blue background */
+  color: #ffffff; /* White font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full page height */
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Optional: Golden accent for the banner */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+form {
+  background-color: #003366; /* Slightly lighter navy blue for contrast */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 2, 9, 0.3); /* Floating effect */
+  text-align: left;
+  max-width: 400px;
+  width: 90%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input, select {
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+button {
+  background-color: #ffcc00; /* Golden button */
+  color: #000; /* Black text */
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #d97612; /* Slightly darker golden hue on hover */
+}
+
+.character-card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  background-color: #002244; /* Deep navy blue for cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Floating card effect */
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+}
+
+.character-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffcc00; /* Golden header for the card */
+}
+
+.character-card p {
+  margin: 0px 0;
+  font-size: 1rem;
+}
+
+.character-card:hover{
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+  -webkit-box-shadow: 5px 5px 0px 0px #289FED, 13px 2px 35px 18px rgba(54,53,255,0);
+  box-shadow: 5px 5px 0px 0px #289FED, 13px 2px 35px 18px rgba(54,53,255,0);
+}
