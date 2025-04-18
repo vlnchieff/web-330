@@ -24,17 +24,16 @@ function playDrawPoker() {
    let cardImages = document.querySelectorAll("img.cardImg");
 
 
-      dealButton.addEventListener("click", function() {
-      if (pokerGame.currentBank >= pokerGame.currentBet) {
-         // Enable the Draw and Stand buttons after the initial deal
-         dealButton.disabled = true;        // Turn off the Deal button
-         betSelection.disabled = true;      // Turn off the Bet Selection list
-         drawButton.disabled = false;       // Turn on the Draw button
-         standButton.disabled = false;      // Turn on the Stand Button
-         statusBox.textContent = "";        // Erase any status messages
-
-
-   });
+  dealButton.addEventListener("click", function() {
+  if (pokerGame.currentBank >= pokerGame.currentBet) {
+      // Enable the Draw and Stand buttons after the initial deal
+      dealButton.disabled = true;        // Turn off the Deal button
+      betSelection.disabled = true;      // Turn off the Bet Selection list
+      drawButton.disabled = false;       // Turn on the Draw button
+      standButton.disabled = false;      // Turn on the Stand Button
+      statusBox.textContent = "";        // Erase any status messages
+  }
+  });
 
 
    drawButton.addEventListener("click", function() {
