@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      Pragmatic JavaScript
+      Chapter 4
+      Programming Assignment
+
+      Author: Chris Weaver
+      Date: 2025 May 15
+      Filename: index.html
+    -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <div class="form-container">
+      <div class="main-text">async / await</div>
+      <form id="movie-form">
+        <input type="text" id="title-input" placeholder="Enter movie title" />
+        <button onclick="displayMovie()">Search</button>
+        <div id="movieContainer"></div>
+      </form>
+      <div id="movie-info">
+        <h2 id="movie-title"></h2>
+        <p id="movie-director"></p>
+        <p id="movie-year"></p>
+        <p id="movie-synopsis"></p>
+      </div>
+      <p id="error-message"></p>
+      </div>
+    <nav class="navbar">
+      <!-- The hamburger menu is always visible -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+
+    <div class="nav-links">
+      <a href="/home.html">Home</a>
+      <a href="/Week5/index.html">CallbackFunctions</a>
+      <a href="index.html">AsyncAwait</a>
+    </div>
+  </nav>
+  </body>
+</html>
